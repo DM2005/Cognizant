@@ -1,0 +1,70 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f9fa;
+  padding: 40px 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: #ffffff;
+  border-left: 6px solid #239b4d;
+  padding: 24px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.card h1 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.book-card .item-row,
+.course-card .course-row {
+  margin-bottom: 16px;
+}
+
+.book-card h3,
+.course-card h2,
+.blog-card h2 {
+  margin: 0;
+}
+
+.book-card h4,
+.course-card p,
+.blog-card p {
+  margin: 4px 0 0;
+  color: #555;
+}
+
+.blog-card h3 {
+  margin-top: 18px;
+  font-size: 20px;
+}
+
+.blog-card p {
+  margin: 8px 0;
+}
+
+@media (max-width: 860px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 420px;
+  }
+}
